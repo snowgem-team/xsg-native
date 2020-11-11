@@ -17,11 +17,11 @@ const PACKAGE_JSON_BASE = {
   description: 'Ionic Native - Native plugins for ionic apps',
   module: 'index.js',
   typings: 'index.d.ts',
-  author: 'ionic',
+  author: 'Jan Vrastil vrastil.honza@gmail.com',
   license: 'MIT',
   repository: {
     type: 'git',
-    url: 'https://github.com/ionic-team/ionic-native.git',
+    url: 'https://github.com/snowgem-team/xsg-native',
   },
 };
 
@@ -39,7 +39,7 @@ const PLUGIN_PEER_DEPENDENCIES = {
 
 function getPackageJsonContent(name: string, peerDependencies = {}, dependencies = {}) {
   return merge(PACKAGE_JSON_BASE, {
-    name: '@ionic-native/' + name,
+    name: '@snowgem-team/' + name,
     dependencies,
     peerDependencies,
     version: VERSION,
