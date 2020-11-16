@@ -25,10 +25,9 @@ import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
  */
 @Plugin({
   pluginName: 'SNSMobileSdkCordovaPlugin',
-  plugin: 'SNSMobileSdkCordovaPlugin', // npm package name, example: cordova-plugin-camera
-  pluginRef: 'cordova.plugins.sumSub', // the variable reference to call the plugin, example: navigator.geolocation
+  plugin: '@sumsub/cordova-idensic-mobile-sdk-plugin', // npm package name, example: cordova-plugin-camera
+  pluginRef: 'cordova.plugins.sumsub', // the variable reference to call the plugin, example: navigator.geolocation
   repo: 'https://github.com/expcapitaldev/sumsub-cordova-idensic-mobile-sdk-plugin', // the github repository URL for the plugin
-  install: 'ionic cordova plugin add @sumsub/cordova-idensic-mobile-sdk-plugin', // OPTIONAL install command, in case the plugin requires variables
   platforms: ['Android', 'iOS'], // Array of platforms supported, example: ['Android', 'iOS']
 })
 @Injectable()
